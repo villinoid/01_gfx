@@ -23,10 +23,10 @@ int main() {
 			r=r%256;
 			g=g%256;
 			b=b%256;
-			sprintf(buffer, "%d %d %d ",r,g,b);
+			sprintf(buffer, "%d %d %d\t",r,g,b);
 			write(file, buffer, strlen(buffer));
 		}
-		write(file, "\n", 2);
+		write(file, "\n", 1);
 	}
 	close(file);
 	return 0;
